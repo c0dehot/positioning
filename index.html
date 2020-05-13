@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L2 Heroes of CSS</title>
+</head>
+<body>
+    <style>
+        .font-class {
+            font-size: 16px;
+        }
+        .container {
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .fixed{
+            position: fixed;
+            width: 130px;
+            height: 50px;
+            background-color: #eee;
+            left: 0;
+            top: 0;
+            text-align: center;
+            padding: 20px;
+        }
+        .relative{
+            position: relative;
+            width: 100%;
+            height: 150px;
+            padding: 20px;
+            text-align: center;
+            background: #eee;
+        }
+        #absolute{ 
+            position: absolute;
+            right: -30px;
+            bottom: 0;
+            width: 250px;
+            padding: 20px;
+            background: #999;
+            text-align: center;
+        }
+    </style>
+    <div class="container">
+        <div class='fixed font-class'>
+            &lt;div&gt; <br />
+            position: fixed
+        </div>
+        
+        <h1>Heading</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec massa in ante viverra malesuada. Vestibulum molestie ante in eros egestas suscipit. Duis imperdiet nulla nibh, ut maximus libero aliquam vel. Etiam malesuada, tortor vel aliquam lobortis, eros mi tempus lacus, eu vestibulum urna purus vel tortor. In gravida velit augue, quis malesuada neque semper eget. Maecenas ullamcorper lacus laoreet, scelerisque mauris dictum, tempus magna. Vivamus sapien est, venenatis at finibus euismod, molestie id erat. Nullam ac gravida dui. Proin commodo interdum mauris, sit amet blandit ligula varius ut. Praesent consectetur id metus vel accumsan. Morbi elementum aliquet mauris, a imperdiet tortor tempus imperdiet. Quisque erat libero, maximus at rhoncus ut, varius quis neque. In porttitor imperdiet dolor ac sagittis. Pellentesque sit amet malesuada tortor, in vehicula nisi. Morbi convallis diam eget urna ultricies pharetra.
+        </p>
+        <div class="relative font-class">
+            &lt;div&gt; <br />
+            position: relative
+            <div id="absolute" class="font-class">
+                &lt;div&gt;<br />
+                position: absolute
+            </div>
+        </div>
+        <p style='font-size: 6px;'>
+            According to all known laws
+of aviation,
+
+  
+there is no way a bee
+should be able to fly.
+
+(and much more!)
+        </p>
+    </div>
+    
+</body>
+</html>
